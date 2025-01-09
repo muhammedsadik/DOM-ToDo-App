@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOM To Do Application</title>
+
   <script src="assets/js/todo.js" defer></script>
   <link rel="stylesheet" href="assets/css/todo.css">
+
+  <title>DOM To Do Application</title>
 </head>
+
 <body>
-  
+
+  <div class="container">
+
+    <div class="header">
+      <div>
+        <h1>TODO</h1>
+        <img src="assets/img/combined-shape.png" alt="combined-shape">
+      </div>
+    </div>
+
+    <div class="input">
+      <span id="input-checkbox"></span>
+      <input id="input-text" type="text" placeholder="Create a new todo…">
+    </div>
+
+    <div class="content">
+
+      <div class="content-items">
+
+        <span id="content-item-todo"></span>
+        <a href="#">Complete online JavaScript course</a>
+        <span id="content-item-delete">X</span>
+
+      </div>
+
+      <div class="content-items">
+
+        <span id="content-item-todo"></span>
+        <a href="#">Complete online JavaScript course</a>
+        <span id="content-item-delete">X</span>
+
+      </div>
+
+      <div class="content-items">
+
+        <span id="content-item-todo"></span>
+        <a href="#">Complete online JavaScript course</a>
+        <span id="content-item-delete">X</span>
+
+      </div>
+
+      <div class="content-items">
+
+        <span id="content-item-todo"></span>
+        <a href="#">Complete online JavaScript course</a>
+        <span id="content-item-delete">X</span>
+
+      </div>
+
+      <div class="info">
+        <p>5 items left</p>
+        <button id="clear-all" type="submit">Clear Completed</button>
+      </div>
+
+    </div>
+
+    <div class="inactive">
+      <p>All</p>
+      <p>Active</p>
+      <p>Completed</p>
+    </div>
+
+    <p class="footer-text">Drag and drop to reorder list</p>
+  </div>
+
+
+
+
 </body>
+
 </html>
