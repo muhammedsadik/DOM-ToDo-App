@@ -1,6 +1,12 @@
 const emptyMsg = "Task cannot be empty";
-
 let toDoList = [];
+
+if (localStorage.toDoList) {
+  toDoList = JSON.parse(localStorage.toDoList);
+} else {
+  localStorage.toDoList = JSON.stringify(toDoList);
+}
+
 
 taskFormHtml();
 const content = document.querySelector(".content");
@@ -25,16 +31,16 @@ function handleNewTask(e) {
     taskObj.id = toDoList[0].id + 1
   }
   toDoList.unshift(taskObj);
+  localStorage.toDoList = JSON.stringify(toDoList);
 
   newTask.reset();
   render();
-
 }
 
 function deleteTask(taskId) {
   const taskIndex = toDoList.findIndex(t => t.id == taskId);
   toDoList.splice(taskIndex, 1);
-
+  localStorage.toDoList = JSON.stringify(toDoList);
   render();
 }
 
@@ -51,9 +57,8 @@ function editTask(e) {
 
   const editTask = toDoList.find(t => t.id == taskObj.id);
   editTask.task = taskObj.task;
-
-  taskFormHtml();
-  
+  localStorage.toDoList = JSON.stringify(toDoList);
+  taskFormHtml();  
   render();
 }
 
