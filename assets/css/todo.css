@@ -52,11 +52,14 @@
   padding-block: 14px;
   padding-inline: 20px;
   border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.task-form {
   display: flex;
   gap: 12px;
   align-items: center;
-  background-color: #FFFFFF;
-  margin-bottom: 16px;
 }
 
 #input-button {
@@ -86,7 +89,6 @@
   flex-direction: column;
   justify-content: center;
   background-color: #FFFFFF;
-  margin-bottom: 16px;
 }
 
 .content-items {
@@ -138,11 +140,13 @@
 }
 
 .info {
-  width: 287px;
+  width: 327px;
+  padding: 16px 20px 20px 20px;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-block: 16px 20px;
 }
 
 .info p {
@@ -234,6 +238,10 @@
     margin-bottom: 24px;
   }
 
+  .task-form {
+    gap: 24px;
+  }
+
   #input-button {
     width: 24px;
     height: 24px;
@@ -246,7 +254,6 @@
   .content {
     width: 540px;
     padding-inline: 24px;
-    margin-bottom: 49px;
   }
 
   .content-items {
@@ -278,7 +285,9 @@
   }
 
   .info {
-    width: 492px;
+    width: 540px;
+    margin-bottom: 49px;
+    padding-inline: 24px;
   }
 
   .info p {
