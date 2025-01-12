@@ -62,6 +62,12 @@
   align-items: center;
 }
 
+.edit-task-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 #input-button {
   width: 20px;
   height: 20px;
@@ -75,7 +81,26 @@
   background-color: rgb(35, 142, 37);
 }
 
+.edit-input-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E3E4F1;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.edit-input-button:hover {
+  background-color: rgb(35, 142, 37);
+}
+
 #input-text {
+  width: 250px;
+  border: none;
+  outline: none;
+}
+
+.edit-text {
   width: 250px;
   border: none;
   outline: none;
@@ -242,12 +267,25 @@
     gap: 24px;
   }
 
+  .edit-task-form {
+    gap: 24px;
+  }
+
   #input-button {
     width: 24px;
     height: 24px;
   }
 
+ .edit-input-button {
+    width: 24px;
+    height: 24px;
+  }
+
   #input-text {
+    width: 440px;
+  }
+
+  .edit-text {
     width: 440px;
   }
 
