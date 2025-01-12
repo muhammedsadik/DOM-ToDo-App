@@ -127,17 +127,6 @@ function taskFormHtml(){
   `;
 }
 
-// function taskHtml(){
-
-//   const input = document.querySelector(".input");
-//   input.innerHTML = taskHtml();
-//   return `
-//       <form class="task-form">
-//         <button id="input-button" type="submit"></button>
-//         <input name="task" id="input-text" type="text" placeholder="Create a new todo…">
-//       </form>
-//   `;
-// }
 
 function editTaskHtml(id, task) {
   return `
